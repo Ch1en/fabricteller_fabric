@@ -9,7 +9,7 @@ let pic = [];
 // STEP 1: Load the model!
 function preload(){
   classifier = ml5.imageClassifier(url + 'model.json');
-  //pic[0] = loadImage('new_flower.gif');
+  
   pic[1] = loadImage('old_flower.gif');
   pic[2] = loadImage('C.png');
   pic[3] = loadImage('maja.png');
@@ -43,7 +43,7 @@ function draw() {
   text(something, width/2, height-30 );
   
   if(label == 'flower'){
-   image(pic[0], windowWidth/2, windowHeight/2-500,500,500)
+  
   }else if(label == 'tree'){
    image(pic[1], windowWidth/2-600, windowHeight/3,450,450)
   }else if(label == 'nothing'){
