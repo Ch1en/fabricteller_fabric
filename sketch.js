@@ -9,7 +9,7 @@ let pic = [];
 // STEP 1: Load the model!
 function preload(){
   classifier = ml5.imageClassifier(url + 'model.json');
-  pic[0] = loadImage('new_flower.png');
+  pic[0] = loadImage('new_flower.PNG');
   pic[1] = loadImage('old_flower.gif');
   pic[2] = loadImage('C.png');
   pic[3] = loadImage('maja.png');
